@@ -50,5 +50,6 @@
                 "Bpcalculation": "Devpac\\Bpcalculation\\BpcalculationFacade"
             }
         }
-    }
+    },
+    "minimum-stability":"dev"
 }

@@ -6,6 +6,29 @@
 
 This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
 
+## Package Creation
+Create package from **Boiler plate**
+***Website link: https://laravelpackageboilerplate.com/***
+
+Once package folder created inside laravel project,
+Extract the downloaded package inside package folder in laravel project.
+
+Folder Structure: ***packages/<vendorname>/<packagename>/src***
+
+After creation folder exract the package inside ***packages/<vendorname>/<packagename>/src***
+
+In the created package **uncomment** the code in **ServiceProvider** which are used inde packge.
+
+In laravel project ***main*** **composer.jon** file add the package path.
+And also add the **Package Service Provider** in laravel project ***main*** **config/app.php** file.
+
+And then push the package folder to git which is from **src** inside package folder.
+Add the ***release*** to every commits so that the package can be flexible with ***verisons***.
+
+Create a account in ***https://packagist.org/***
+Submit the git repo url to: ***https://packagist.org/packages/submit***
+
+
 ## Installation
 
 You can install the package via composer:
@@ -15,10 +38,35 @@ composer require devpac/bpcalculation
 ```
 
 ## Usage
-
-```php
-// Usage description here
+Add in ***config/app.php*** file
 ```
+Devpac\Bpcalculation\BpcalculationServiceProvider::class,
+```
+
+First Time package publishing steps:
+
+**Note:**When new package are released check for composer current version.
+         New package will install only in composer latest version
+To update composer:
+***Example:***
+```
+composer self-update --2
+```
+
+To check composer version:
+```
+composer
+```
+
+Never forget to:
+```
+php artisan optimize
+
+php artisan config:clear
+
+composer dump-autoload
+```
+
 
 ### Testing
 

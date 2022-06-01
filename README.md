@@ -13,9 +13,9 @@ Create package from **Boiler plate**
 Once package folder created inside laravel project,
 Extract the downloaded package inside package folder in laravel project.
 
-Folder Structure: ***packages/<vendorname>/<packagename>/src***
+Folder Structure: ***packages/vendorname/packagename/src***
 
-After creation folder exract the package inside ***packages/<vendorname>/<packagename>/src***
+After creation folder exract the package inside ***packages/vendorname/packagename/src***
 
 In the created package **uncomment** the code in **ServiceProvider** which are used inde packge.
 
